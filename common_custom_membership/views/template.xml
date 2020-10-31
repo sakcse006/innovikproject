@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template id="view_party_registration_form" name="registration_form">
+        <style> *{ margin: 0; padding:0; }
+         body{ background-color: rgb(153, 222, 228); 
+         /* background-image: url("image-analysis.png"); */ } 
+         .container h4{ margin-top: 10px; margin-bottom: 20px; padding-left: 40%; font-size: x-large; }
+          .container label{ color:rgb(8, 8, 8); }
+           .container .box{ height: 50px; padding-left: 38%; }
+            .container .box input{ border-radius: 3px; height: 25px; width: 300px; font-size: 15px; font-family: "Sofia"; } 
+            .container h3{ margin-top: 10px; padding-left: 38%; }
+             .container .box1{ margin-top: 15px; padding-left: 38%; } 
+             .container button{ padding: 3px 15px; }
+        #myProgress {
+              width: 100%;
+              background-color: #ddd;
+            }
+
+            #myBar {
+              width: 1%;
+              height: 30px;
+              background-color: #4CAF50;
+            }
+            #kk{
+                position: fixed;
+                top: 40%;
+                left: 50%;
+                margin-top: -40px;
+                margin-left: -100px;
+                }
+            .loader {
+                border: 16px solid #f3f3f3;
+                border-radius: 50%;
+                border-top: 16px solid #3498db;
+                width: 120px;
+                height: 120px;
+                -webkit-animation: spin 2s linear infinite; /* Safari */
+                animation: spin 2s linear infinite;
+                display:none;
+            }
+            /* Safari */
+            @-webkit-keyframes spin {
+            0% { -webkit-transform: rotate(0deg); }
+            100% { -webkit-transform: rotate(360deg); }
+            }
+
+            @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+            }
+            #k3{
+                position: fixed;
+                top: 70%;
+                left: 43%;
+                margin-top: -70px;
+                margin-left: -100px;
+                display:none;
+            }
+        </style>
+        <form   action="/party_registration_form_submit" method="POST">
+            <div class="container" id="k2" >
+                <h4>Party Registration</h4>
+                <div class="box">
+                    <label for="name">Party Name</label>
+                    <br/>
+                    <input type="text" id="number1" name="party_name" placeholder="party Name" required=""/>
+                    <br/>
+                </div>
+                <div class="box">
+                    <label for="school">Admin Name</label>
+                    <br/>
+                    <input type="text" id="number2" name="admin_name" placeholder="Admin Name" required=""/>
+                    <br/>
+                </div>
+                <div class="box">
+                    <label>Admin Login Email Id</label>
+                    <br/>
+                    <input type="text" id="number3" name="admin_login_email_id" placeholder="Email Id" required=""/>
+                    <br/>
+                </div>
+                <div class="box">
+                    <label>Password</label>
+                    <br/>
+                    <input type="password" id="number4" name="login_password" placeholder="Password" required=""/>
+                    <br/>
+                </div>
+                    <div class="box">
+                    <label>Contact Admin User Name</label>
+                    <br/>
+                    <input type="text" id="number5" name="admin_contact_number" placeholder="User Name" required=""/>
+                    <br/>
+                </div>
+                    <div class="box">
+                    <label>Phone Number</label>
+                    <br/>
+                    <input type="number" id="number6" name="phone_number" placeholder="Phone Number"  required=""/>
+                    <br/>
+                </div>
+                <div class="box1">
+                    <button onclick="moves()" type="submit" name="submit_website" >Submit</button>
+                </div>
+            </div>
+            <div class="loader" id="kk">
+            </div>
+            <div id="k3"> <h3> It will take 2 minutes for creating new database</h3></div>
+        </form>
+        <script type="text/javascript">
+           
+                function moves(){
+                    var number1=document.getElementById("number1").value;
+                    var number2=document.getElementById("number2").value;
+                    var number3=document.getElementById("number3").value;
+                    var number4=document.getElementById("number4").value;
+                    var number5=document.getElementById("number5").value;
+                    var number6=document.getElementById("number6").value;
+                        if(number1){
+                        	if(number2){
+                            	if(number3){
+                    				if(number4){
+                                    	if(number5){
+                    						if(number6){
+                    									
+                                                        document.getElementById("kk").style.display = "block";
+                                                        document.getElementById("k2").style.display = "none";
+                                                        document.getElementById("k3").style.display = "block";
+                                                    	}
+                                        			}
+                    						  }
+                                          }
+                    				 }
+                   			   	 }
+                                  
+                    }
+
+            </script>
+    </template>
+    <template id="registration_result" name="registration_result">
+        <h4>
+            <span t-esc="result"/>
+        </h4>
+        <label>
+            <a href="/party-registration">OK</a>
+        </label>
+    </template>
+<!--    <record id="self_registration" model="website.page">-->
+<!--    <field name="name">Self Registration</field>-->
+<!--    <field name="type">qweb</field>-->
+<!--    <field name="url">/self-registration-thank-you</field>-->
+<!--    <field name="website_published">True</field>-->
+<!--    <field name="key">custom_self_registration_module.self_registration</field>-->
+<!--    <field name="arch" type="xml">-->
+<!--    <t name="Registered" t-name="custom_self_registration_module.self_registration">-->
+<!--    <t t-call="website.layout">-->
+<!--    <div id="wrap">-->
+<!--    <div class="oe_structure"/>-->
+<!--    <div class="container">-->
+<!--    <h1>Thanks!</h1>-->
+<!--    </div>-->
+<!--    <div class="oe_structure"/>-->
+<!--    </div>-->
+<!--    </t>-->
+<!--    </t>-->
+<!--    </field>-->
+<!--    </record>-->
+</odoo>

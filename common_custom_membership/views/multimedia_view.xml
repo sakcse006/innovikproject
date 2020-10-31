@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record model="ir.actions.act_url" id="action_uolo_url">
+            <field name="name">Uolo Page</field>
+            <field name="url">https://app.theuolo.com/</field>
+            <field name="target">new</field>
+        </record>
+        <menuitem id="menu_multimedia" name="Multimedia"
+        sequence="2" parent="common_custom_membership.sms_menu_root"
+        action="action_uolo_url" />
+
+    </data>
+</odoo>

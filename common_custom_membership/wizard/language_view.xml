@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<odoo>
+    <data>
+        <record id="view_language_form" model="ir.ui.view">
+            <field name="name">op.language.wizard.form</field>
+            <field name="model">op.language.wizard</field>
+            <field name="arch" type="xml">
+                <form string="language">
+                    <field name="state" invisible="1"/>
+                    <group states="init">
+                        <field name="lang"/>
+                        <field name="overwrite" groups="base.group_no_one" invisible="1"/>
+                    </group>
+                    <group states="done" colspan="4">
+                        <label string="The selected language has been successfully installed.You must change the preferences of the user to view the changes."/>
+                    </group>
+                    <footer states="init">
+                        <button name="lang_install" string="Load" type="object" class="btn-primary"/>
+                        <button special="cancel" string="Cancel" class="btn-default"/>
+                    </footer>
+                    <footer states="done">
+                        <button   name="reload" string="Close" type="object" class="btn-primary"/>
+                    </footer>
+                    
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="act_open_op_language_view">
+            <field name="name">Language</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">op.language.wizard</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+
+        <menuitem id="language_menu_root" name="Language" sequence="6"/>
+        <menuitem id="lang_menu" name="Language" parent="language_menu_root" sequence="1" action="act_open_op_language_view" />
+
+    </data>
+</odoo>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="make_hide_top_menu" model="res.groups">
+            <field name="name">Hide Top menu</field>
+            <field name="users" eval="[(4, ref('base.user_root'))]"/>
+         </record>
+
+        <!--<apps menu/>-->
+        <record model="ir.ui.menu" id="base.menu_management">
+            <field name="groups_id" eval="[(6,0,[ref('make_hide_top_menu')])]"/>
+        </record>
+
+        <!--Discuss menu-->
+        <record model="ir.ui.menu" id="mail.mail_channel_menu_root_chat">
+            <field name="groups_id" eval="[(6,0,[ref('make_hide_top_menu')])]"/>
+        </record>
+
+        <!--website menu-->
+        <record model="ir.ui.menu" id="website.menu_website_configuration">
+            <field name="groups_id" eval="[(6,0,[ref('make_hide_top_menu')])]"/>
+        </record>
+
+        <!--settings menu-->
+        <!--<record model="ir.ui.menu" id="website.menu_administration">-->
+            <!--<field name="groups_id" eval="[(6,0,[ref('make_hide_top_menu')])]"/>-->
+        <!--</record>-->
+
+    </data>
+</odoo>

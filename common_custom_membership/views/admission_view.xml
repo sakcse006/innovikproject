@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="view_op_admission_member_tree" model="ir.ui.view">
+            <field name="name">op.admission.member.tree</field>
+            <field name="model">op.admission.member</field>
+            <field name="priority" eval="8" />
+            <field name="arch" type="xml">
+                <tree string="Registration">
+                    <field name="title" />
+                    <field name="name" />
+                    <field name="middle_name" />
+                    <field name="last_name" />
+                    <field name="application_number" />
+                    <field name="admission_date" />
+                    <field name="application_date" />
+                    <field name="birth_date" />
+                    <field name="district_id" />
+                    <field name="union_id" />
+                    <field name="panchayat_id" />
+                    <field name="state" />
+                </tree>
+            </field>
+        </record>
+        <record id="view_op_admission_member_form" model="ir.ui.view">
+            <field name="name">op.admission.member.form</field>
+            <field name="model">op.admission.member</field>
+            <field name="priority" eval="8" />
+            <field name="arch" type="xml">
+                <form string="Registration">
+                    <header groups="common_custom_membership.group_op_union_admin,common_custom_membership.group_op_district_admin,
+                                common_custom_membership.group_op_membership_admin,common_custom_membership.group_op_panchayat_admin">
+                        <button string="Submit" states="draft" class="oe_highlight"
+                            type="object" name="submit_form"/>
+                        <button string="Admission Confirm" class="oe_highlight" states="submit" type="object" name="admission_confirm"/>
+                        <button name="enroll_member" states="admission" string="Enroll"
+                            type="object" class="oe_highlight"/>
+                        <button name="open_member" states="done" string="Open Member Profile"
+                            type="object" />
+                        <field name="state" widget="statusbar" statusbar_visible="draft,submit,admission,done" />
+                    </header>
+                    <sheet>
+                        <div class="oe_title">
+                            <field name="is_member"/>
+                            <label string="Already Member"/>
+                            <field name="member_id" placeholder="Member" options="{'no_create_edit': True}"  attrs="{'required':[('is_member','=',True)],'invisible': [('is_member','=', False)]}"/>
+                        </div>
+                        <field name="image" widget="image" class="oe_left oe_avatar" />
+                        <div class="oe_title">
+                            <h1>
+                                <field name="title" placeholder="Title" style="width: 30%%" />
+                            </h1>
+                            <h1><table>
+                                <tr>
+                                <td><field name="name" placeholder="First Name" style="padding-right:10px" /></td>
+                                <td><field name="middle_name" placeholder="Middle Name" style="padding-right:10px" /></td>
+                                <td><field name="last_name" placeholder="Last Name" style="padding-right:10px" /></td>
+                                </tr>
+                                </table>
+                            </h1>
+                        </div>
+                        <notebook colspan="4">
+                            <page name="admission_member_detail" string="Admission Member Detail">
+                                <group col="4" colspan="4">
+                                    <field name="register_id" domain="[('state', 'in', ['admission'])]" widget="selection" />
+                                    <field name="application_number" />
+                                    <field name="application_date" />
+                                    <field name="admission_date" />
+                                    <field name="district_id" />
+                                    <field name="union_id"/>
+                                    <field name="panchayat_id"/>
+                                    <field name="user_id"/>
+                                    <field name="partner_id" invisible="1"/>
+                                </group>
+                                <group col="4" colspan="4">
+                                    <field name="gender" />
+                                    <field name="birth_date" />
+                                    <field name="email" placeholder="Email" />
+                                    <field name="nationality"/>
+                                    <field name="emergency_contact"
+                                           context="{'show_address': 1}"
+                                           options='{"always_reload": True}'/>
+                                    <field name="blood_group"/>
+                                </group>
+                                <label for="street" string="Address" />
+                                <div>
+                                    <field name="street" placeholder="Street..." />
+                                    <field name="street2" />
+                                    <div class="address_format">
+                                        <field name="city" placeholder="City" style="width: 40%%" />
+                                        <field name="state_id" options='{"no_open": True}'
+                                            placeholder="State" style="width: 24%%" />
+                                        <field name="zip" placeholder="ZIP" style="width: 34%%" />
+                                    </div>
+                                    <field name="country_id" placeholder="Country" options='{"no_open": True}' />
+                                    <field name="phone" placeholder="Phone" />
+                                    <field name="mobile" placeholder="Mobile" />
+                                </div>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="view_op_admission_member_search" model="ir.ui.view">
+            <field name="name">op.admission.member.search</field>
+            <field name="model">op.admission.member</field>
+            <field name="priority" eval="8" />
+            <field name="arch" type="xml">
+                <search string="Registration">
+                    <field name="name" />
+                    <field name="middle_name" />
+                    <field name="last_name" />
+                    <field name="application_number" />
+                    <field name="admission_date" />
+                    <field name="application_date" />
+                    <field name="birth_date" />
+                    <field name="district_id" />
+                    <field name="union_id" />
+                    <field name="panchayat_id" />
+                    <newline />
+                    <filter name="enrolled_member" string="Enrolled" domain="[('state','=','done')]" />
+                    <group expand="0" string="Group By...">
+                        <filter string="Last Name" domain="[]"
+                            context="{'group_by':'last_name'}" />
+                        <filter string="Admission Date" domain="[]"
+                            context="{'group_by':'admission_date'}" />
+                        <filter string="Application Date" domain="[]"
+                            context="{'group_by':'application_date'}" />
+                        <filter string="District" domain="[]" context="{'group_by':'district_id'}" />
+                        <filter string="Union" domain="[]" context="{'group_by':'union_id'}" />
+                        <filter string="Panchayat" domain="[]" context="{'group_by':'panchayat_id'}" />
+                        <filter string="Status" domain="[]" context="{'group_by':'state'}" />
+                    </group>
+                </search>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="view_op_admission_member_graph">
+            <field name="name">op.admission.member.graph</field>
+            <field name="model">op.admission.member</field>
+            <field name="arch" type="xml">
+                <graph string="District By Admission" type="pie">
+                    <field name="district_id" />
+                    <field name="nbr" operator="+" />
+                </graph>
+            </field>
+        </record>
+
+
+        <record model="ir.actions.act_window" id="act_open_op_admission_member_view">
+            <field name="name">Registration</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">op.admission.member</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form,graph</field>
+            <field name="search_view_id" ref="view_op_admission_member_search" />
+            <field name="domain">[]</field>
+            <field name="context">{}</field>
+        </record>
+        <record model="ir.actions.act_window.view" id="act_open_op_admission_member_view_form">
+            <field name="act_window_id" ref="act_open_op_admission_member_view" />
+            <field name="sequence" eval="20" />
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_op_admission_member_form" />
+        </record>
+        <record model="ir.actions.act_window.view" id="act_open_op_admission_member_view_tree">
+            <field name="act_window_id" ref="act_open_op_admission_member_view" />
+            <field name="sequence" eval="10" />
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_op_admission_member_tree" />
+        </record>
+
+        <menuitem id="menu_admission_member" name="Applications"
+            sequence="3" parent="common_custom_membership.menu_op_admission_member_submenu"
+                  action="act_open_op_admission_member_view" />
+
+    </data>
+</odoo>

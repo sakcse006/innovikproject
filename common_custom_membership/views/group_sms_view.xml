@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <record id="view_sms_tree" model="ir.ui.view">
+            <field name="name">op.sms.tree</field>
+            <field name="model">op.sms</field>
+            <field name="priority" eval="8" />
+            <field name="arch" type="xml">
+                <tree string="SMS Registration">
+                    <field name="district_id" />
+                    <field name="union_id" />
+                    <field name="panchayat_id" />
+                    <field name="sms_line_ids" widget="many2many_tags"/>
+                    <field name="message" />
+                </tree>
+            </field>
+        </record>
+        <record id="view_sms_form" model="ir.ui.view">
+            <field name="name">op.sms.form</field>
+            <field name="model">op.sms</field>
+            <field name="priority" eval="8" />
+            <field name="arch" type="xml">
+                <form string="sms Message">
+                    <sheet>
+                        <group>
+                        <field name="district_id" options="{'no_create_edit': True, 'no_create': True}" required="1"/>
+                        <field name="union_id" options="{'no_create_edit': True, 'no_create': True}"
+                               required="0" domain="[('district_id', '=', district_id)]"/>
+                        <field name="panchayat_id" options="{'no_create_edit': True, 'no_create': True}"
+                               required="0" domain="[('union_id', '=', union_id)]"/>
+                    </group>
+                    <group col="4" string="Members">
+                            <field name="sms_line_ids" colspan="4" nolabel="1">
+                                <tree string="Member's Info" create="false" edit="false">
+                                    <field name="member_id"/>
+                                    <field name="mobile" />
+                                    <field name="phone" />
+                                </tree>
+                            </field>
+                    </group>
+                    <group>
+                        <field name="message" placeholder="Write your message here and send to Partner"/>
+                    </group>
+
+                    <footer>
+                        <button name="send_message" type="object" string="send"
+                            class="oe_highlight" confirm="Are you sure want to send sms"
+                            help="this button will send an sms " />
+                        <button name="cancel" string="Cancel" special="cancel"/>
+                    </footer>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="view_student_edit_form" model="ir.ui.view">
+            <field name="name">op.sms.line.form</field>
+            <field name="model">op.sms.line</field>
+            <field name="priority" eval="8" />
+            <field name="arch" type="xml">
+                <form string="Edit Group">
+                    <group>
+                        <field name="member_id" readonly="1"/>
+                        <field name="mobile" readonly="1"/>
+                        <field name="phone" readonly="1"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="act_open_op_sms_view">
+            <field name="name">Group sms</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">op.sms</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">[]</field>
+            <field name="context">{}</field>
+        </record>
+         <record model="ir.actions.act_window.view" id="act_open_op_sms_view_tree">
+            <field name="act_window_id" ref="act_open_op_sms_view" />
+            <field name="sequence" eval="10" />
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_sms_tree" />
+         </record>
+
+
+        <menuitem id="sms_menu_root" name="Communicator" sequence="1"/>
+        <menuitem id="msg_menu" name="Group SMS" parent="sms_menu_root" sequence="1" action="act_open_op_sms_view" />
+
+    </data>
+</odoo>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="view_op_union_tree" model="ir.ui.view">
+            <field name="name">op.union.tree</field>
+            <field name="model">op.union</field>
+            <field name="priority" eval="8" />
+            <field name="arch" type="xml">
+                <tree string="Union">
+                    <field name="union_name" />
+                    <field name="union_code" />
+                    <field name="district_id" />
+                    <field name="panchayat_ids" widget="many2many_tags" />
+                </tree>
+            </field>
+        </record>
+        <record id="view_op_union_form" model="ir.ui.view">
+            <field name="name">op.union.form</field>
+            <field name="model">op.union</field>
+            <field name="priority" eval="8" />
+            <field name="arch" type="xml">
+                <form string="Union">
+                    <sheet>
+                        <group col="4">
+                            <field name="union_name" />
+                            <field name="union_code"/>
+                            <field name="district_id"/>
+                        </group>
+                        <group string="Panchayat" name="panchayat">
+                            <field name="panchayat_ids" nolabel="1" readonly="0" />
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="view_op_union_search" model="ir.ui.view">
+            <field name="name">op.union.search</field>
+            <field name="model">op.union</field>
+            <field name="priority" eval="8" />
+            <field name="arch" type="xml">
+                <search string="Union">
+                    <field name="union_name" />
+                    <field name="union_code" />
+                    <field name="district_id" />
+                    <field name="panchayat_ids" />
+                    <group expand="0" string="Group By...">
+                        <filter string="Union" domain="[]"
+                            context="{'group_by':'union_name'}" />
+                        <filter string="District" domain="[]"
+                            context="{'group_by':'district_id'}" />
+                    </group>
+                </search>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="act_open_op_union_view">
+            <field name="name">Union</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">op.union</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="search_view_id" ref="view_op_union_search" />
+            <field name="domain">[]</field>
+            <field name="context">{}</field>
+        </record>
+        <record model="ir.actions.act_window.view" id="act_open_op_union_view_form">
+            <field name="act_window_id" ref="act_open_op_union_view" />
+            <field name="sequence" eval="20" />
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_op_union_form" />
+        </record>
+        <record model="ir.actions.act_window.view" id="act_open_op_union_view_tree">
+            <field name="act_window_id" ref="act_open_op_union_view" />
+            <field name="sequence" eval="10" />
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_op_union_tree" />
+        </record>
+
+        <menuitem id="menu_op_union_sub" name="Union" parent="common_custom_membership.menu_membership_root" sequence="2"
+            action="act_open_op_union_view"
+                  groups="common_custom_membership.group_op_membership_admin,common_custom_membership.group_op_district_admin,common_custom_membership.group_op_union_admin" />
+    </data>
+</odoo>

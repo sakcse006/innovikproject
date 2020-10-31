@@ -1,0 +1,57 @@
+/* *{
+    margin: 0;
+    padding:0;
+}
+body{
+    background-color: rgb(77, 210, 223);
+    
+}
+
+.container h4{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-left: 40%;
+    font-size: x-large;
+}
+.container label{
+  color:rgb(8, 8, 8);
+}
+.container .box{
+    height: 50px;
+    padding-left: 38%;  
+    
+}
+.container .box input{
+    border-radius: 3px;
+    height: 20px;  
+    width: 300px; 
+    font-size: 15px;
+    font-family: "Sofia";
+}
+.container h3{
+    margin-top: 10px;
+    padding-left: 38%;
+}
+.container .box1{
+    margin-top: 15px;
+    padding-left: 38%;
+}
+.container button{
+    padding: 3px 15px;
+} */
+
+#kk{ 
+    top: .8rem;
+    width: 1.25rem;
+    height: 1.25rem;
+    color: rgb(10, 9, 9);
+   }
+         
+body{
+    height: 100%;
+  margin: 0;
+  padding: 7em;
+  background-image: url(./Innovik.png);
+  font-size:small
+}    
+    

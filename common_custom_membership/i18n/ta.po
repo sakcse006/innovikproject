@@ -1,0 +1,1750 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* common_custom_membership
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0-20190203\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-06 04:57+0000\n"
+"PO-Revision-Date: 2020-10-06 04:57+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_meeting_count
+msgid "# Meetings"
+msgstr "# கூட்டங்கள்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_supplier_invoice_count
+msgid "# Vendor Bills"
+msgstr "# விற்பனையாளர் பில்கள்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_purchase_order_count
+msgid "# of Purchase Order"
+msgstr "# கொள்முதல் ஆணை"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_sale_order_count
+msgid "# of Sales Order"
+msgstr "# விற்பனை ஆணை"
+
+#. module: common_custom_membership
+#: selection:op.admission.member,blood_group:0
+#: selection:op.member,blood_group:0
+msgid "A+ve"
+msgstr "A+ve"
+
+#. module: common_custom_membership
+#: selection:op.admission.member,blood_group:0
+#: selection:op.member,blood_group:0
+msgid "A-ve"
+msgstr "A-ve"
+
+#. module: common_custom_membership
+#: selection:op.admission.member,blood_group:0
+#: selection:op.member,blood_group:0
+msgid "AB+ve"
+msgstr "AB+ve"
+
+#. module: common_custom_membership
+#: selection:op.admission.member,blood_group:0
+#: selection:op.member,blood_group:0
+msgid "AB-ve"
+msgstr "AB-ve"
+
+#. module: common_custom_membership
+#: model:ir.ui.menu,name:common_custom_membership.menu_op_admission_member_submenu
+msgid "ADMISSIONS"
+msgstr "நுழைவு"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_property_account_payable_id
+msgid "Account Payable"
+msgstr "செலுத்த வேண்டிய கணக்கு"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_property_account_receivable_id
+msgid "Account Receivable"
+msgstr "பெறத்தக்க கணக்கு"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_message_needaction
+msgid "Action Needed"
+msgstr "செயல் தேவை"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_active
+msgid "Active"
+msgstr "செயலில்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_activity_ids
+msgid "Activities"
+msgstr "செயல்பாடுகள்"
+
+#. module: common_custom_membership
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_admission_member_form
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_member_form
+msgid "Address"
+msgstr "முகவரி"
+
+#. module: common_custom_membership
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_member_form
+msgid "Address Detail"
+msgstr "முகவரி விவரம்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_type
+msgid "Address Type"
+msgstr "முகவரி வகை"
+
+#. module: common_custom_membership
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_admission_register_member_form
+msgid "Admission"
+msgstr "சேர்க்கை"
+
+#. module: common_custom_membership
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_admission_member_form
+#: selection:op.admission.member,state:0
+msgid "Admission Confirm"
+msgstr "சேர்க்கை உறுதிப்படுத்தவும்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_admission_member_admission_date
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_admission_member_search
+msgid "Admission Date"
+msgstr "சேர்க்கை தேதி"
+
+#. module: common_custom_membership
+#: model:ir.model,name:common_custom_membership.model_op_admission_member
+msgid "Admission Member"
+msgstr "சேர்க்கை உறுப்பினர்"
+
+#. module: common_custom_membership
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_admission_member_form
+msgid "Admission Member Detail"
+msgstr "சேர்க்கை உறுப்பினர் விவரம்"
+
+#. module: common_custom_membership
+#: selection:op.admission.register.member,state:0
+msgid "Admission Process"
+msgstr "சேர்க்கை செயல்முறை"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_admission_member_register_id
+msgid "Admission Register"
+msgstr "சேர்க்கை பதிவு"
+
+#. module: common_custom_membership
+#: model:ir.model,name:common_custom_membership.model_op_admission_register_member
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_admission_register_member_form
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_admission_register_member_pivot
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_admission_register_member_search
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_admission_register_member_tree
+msgid "Admission Register Member"
+msgstr "சேர்க்கை பதிவு உறுப்பினர்"
+
+#. module: common_custom_membership
+#: model:ir.ui.menu,name:common_custom_membership.menu_admission_register_member
+msgid "Admission Registers"
+msgstr "சேர்க்கை பதிவேடுகள்"
+
+#. module: common_custom_membership
+#: model:ir.actions.act_window,name:common_custom_membership.act_open_op_admission_register_member_view
+msgid "Admission Registers Member"
+msgstr "சேர்க்கை பதிவு உறுப்பினர்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_admission_register_member_admission_ids
+#: model:ir.ui.menu,name:common_custom_membership.menu_op_admission_member_root
+msgid "Admissions"
+msgstr "சேர்க்கை"
+
+#. module: common_custom_membership
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_admission_member_form
+msgid "Already Member"
+msgstr "ஏற்கனவே உறுப்பினர்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_already_partner
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_member_form
+msgid "Already Partner"
+msgstr "ஏற்கனவே கூட்டாளர்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_admission_member_application_date
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_admission_member_search
+msgid "Application Date"
+msgstr "விண்ணப்ப தேதி"
+
+#. module: common_custom_membership
+#: code:addons/common_custom_membership/models/admission.py:161
+#, python-format
+msgid "Application Date should be between Start Date &                     End Date of Admission Register."
+msgstr "விண்ணப்ப தேதி தொடக்க தேதி மற்றும் சேர்க்கை பதிவின் இறுதி தேதி இடையே இருக்க வேண்டும்."
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_admission_member_application_number
+msgid "Application Number"
+msgstr "விண்ணப்ப எண்"
+
+#. module: common_custom_membership
+#: model:ir.ui.menu,name:common_custom_membership.menu_admission_member
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_admission_register_member_form
+msgid "Applications"
+msgstr "விண்ணப்பம்"
+
+#. module: common_custom_membership
+#: model:ir.ui.view,arch_db:common_custom_membership.view_sms_form
+msgid "Are you sure want to send sms"
+msgstr "நீங்கள் நிச்சயமாக எஸ்எம்எஸ் அனுப்ப விரும்புகிறீர்களா?"
+
+#. module: common_custom_membership
+#: selection:op.admission.member,blood_group:0
+#: selection:op.member,blood_group:0
+msgid "B+ve"
+msgstr "B+ve"
+
+#. module: common_custom_membership
+#: selection:op.admission.member,blood_group:0
+#: selection:op.member,blood_group:0
+msgid "B-ve"
+msgstr "B-ve"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_bank_account_count
+msgid "Bank"
+msgstr "வங்கி"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_bank_ids
+msgid "Banks"
+msgstr "வங்கிகள்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_barcode
+msgid "Barcode"
+msgstr "பார்கோடு"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_admission_member_birth_date
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_birth_date
+msgid "Birth Date"
+msgstr "பிறந்த தேதி"
+
+#. module: common_custom_membership
+#: code:addons/common_custom_membership/models/admission.py:170
+#: code:addons/common_custom_membership/models/members.py:34
+#, python-format
+msgid "Birth Date can't be greater than current date!"
+msgstr "பிறந்த தேதி தற்போதைய தேதியை விட அதிகமாக இருக்க முடியாது!"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_admission_member_blood_group
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_blood_group
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_member_search
+msgid "Blood Group"
+msgstr "இரத்த வகை"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_message_bounce
+msgid "Bounce"
+msgstr "பவுன்ஸ்"
+
+#. module: common_custom_membership
+#: model:ir.ui.view,arch_db:common_custom_membership.op_member_user_create_view
+#: model:ir.ui.view,arch_db:common_custom_membership.op_whatsapp_send_msg_wizard
+#: model:ir.ui.view,arch_db:common_custom_membership.view_language_form
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_admission_register_member_form
+#: model:ir.ui.view,arch_db:common_custom_membership.view_sms_form
+msgid "Cancel"
+msgstr "ரத்துசெய்"
+
+#. module: common_custom_membership
+#: selection:op.admission.member,state:0
+#: selection:op.admission.register.member,state:0
+msgid "Cancelled"
+msgstr "ரத்து செய்யப்பட்டது"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_channel_ids
+msgid "Channels"
+msgstr "சேனல்கள்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,help:common_custom_membership.field_op_member_is_company
+msgid "Check if the contact is a company, otherwise it is a person"
+msgstr "தொடர்பு ஒரு நிறுவனம் என்பதை சரிபார்க்கவும், இல்லையெனில் அது ஒரு நபர்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,help:common_custom_membership.field_op_member_customer
+msgid "Check this box if this contact is a customer."
+msgstr "இந்த தொடர்பு வாடிக்கையாளராக இருந்தால் இந்த பெட்டியை சரிபார்க்கவும்."
+
+#. module: common_custom_membership
+#: model:ir.model.fields,help:common_custom_membership.field_op_member_supplier
+msgid "Check this box if this contact is a vendor. If it's not checked, purchase people will not see it when encoding a purchase order."
+msgstr "இந்த தொடர்பு விற்பனையாளராக இருந்தால் இந்த பெட்டியை சரிபார்க்கவும். இது சரிபார்க்கப்படாவிட்டால், கொள்முதல் ஆர்டரை குறியாக்கும்போது வாங்கும் நபர்கள் அதைப் பார்க்க மாட்டார்கள்."
+
+#. module: common_custom_membership
+#: model:ir.model.fields,help:common_custom_membership.field_op_member_employee
+msgid "Check this box if this contact is an Employee."
+msgstr "இந்த தொடர்பு ஒரு பணியாளராக இருந்தால் இந்த பெட்டியை சரிபார்க்கவும்."
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_admission_member_city
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_city
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_admission_member_form
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_member_form
+msgid "City"
+msgstr "நகரம்"
+
+#. module: common_custom_membership
+#: model:ir.ui.view,arch_db:common_custom_membership.view_language_form
+msgid "Close"
+msgstr "முடிவு"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_district_district_code
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_panchayat_panchayat_code
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_union_union_code
+msgid "Code"
+msgstr "குறியீடு"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_color
+msgid "Color Index"
+msgstr "வண்ண அட்டவணை"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_commercial_partner_id
+msgid "Commercial Entity"
+msgstr "வணிக நிறுவனம்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_commercial_partner_country_id
+msgid "Commercial Entity's Country"
+msgstr "வணிக நிறுவனத்தின் நாடு"
+
+#. module: common_custom_membership
+#: model:ir.ui.menu,name:common_custom_membership.sms_menu_root
+msgid "Communicator"
+msgstr "தொடர்பாளர்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_ref_company_ids
+msgid "Companies that refers to partner"
+msgstr "கூட்டாளரைக் குறிக்கும் நிறுவனங்கள்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_company_id
+msgid "Company"
+msgstr "நிறுவனம்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_company_name
+msgid "Company Name"
+msgstr "நிறுவனத்தின் பெயர்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_commercial_company_name
+msgid "Company Name Entity"
+msgstr "நிறுவனத்தின் பெயர் நிறுவனம்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_company_type
+msgid "Company Type"
+msgstr "நிறுவனத்தின் வகை"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_contact_address
+msgid "Complete Address"
+msgstr "முழுமையான முகவரி"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_child_ids
+msgid "Contacts"
+msgstr "தொடர்புகள்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_contract_ids
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_contracts_count
+msgid "Contracts"
+msgstr "ஒப்பந்தங்கள்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_payment_token_count
+msgid "Count Payment Token"
+msgstr "கட்டண டோக்கனை எண்ணுங்கள்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,help:common_custom_membership.field_op_member_message_bounce
+msgid "Counter of the number of bounced emails for this contact"
+msgstr "இந்த தொடர்புக்கான பவுன்ஸ் மின்னஞ்சல்களின் எண்ணிக்கையின் கவுண்டர்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_admission_member_country_id
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_country_id
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_admission_member_form
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_member_form
+msgid "Country"
+msgstr "நாடு"
+
+#. module: common_custom_membership
+#: model:ir.ui.view,arch_db:common_custom_membership.op_member_user_create_view
+msgid "Create User for selected Member(s)"
+msgstr "தேர்ந்தெடுக்கப்பட்ட உறுப்பினர் (களுக்கு) பயனரை உருவாக்கவும்"
+
+#. module: common_custom_membership
+#: model:ir.model,name:common_custom_membership.model_wizard_op_member
+msgid "Create User for selected Student(s)"
+msgstr "தேர்ந்தெடுக்கப்பட்ட மாணவர் (களுக்கு) பயனரை உருவாக்கவும்"
+
+#. module: common_custom_membership
+#: model:ir.actions.act_window,name:common_custom_membership.action_member_user_create_view
+#: model:ir.ui.view,arch_db:common_custom_membership.op_member_user_create_view
+msgid "Create Users"
+msgstr "பயனர்களை உருவாக்கவும்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_admission_member_create_uid
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_admission_register_member_create_uid
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_district_create_uid
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_language_wizard_create_uid
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_create_uid
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_panchayat_create_uid
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_union_create_uid
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_sms_create_uid
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_whatsapp_message_wizard_create_uid
+#: model:ir.model.fields,field_description:common_custom_membership.field_wizard_op_member_create_uid
+msgid "Created by"
+msgstr "உருவாக்கியது"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_admission_member_create_date
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_admission_register_member_create_date
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_district_create_date
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_language_wizard_create_date
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_create_date
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_panchayat_create_date
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_union_create_date
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_sms_create_date
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_whatsapp_message_wizard_create_date
+#: model:ir.model.fields,field_description:common_custom_membership.field_wizard_op_member_create_date
+msgid "Created on"
+msgstr "அன்று உருவாக்கப்பட்ட"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_credit_limit
+msgid "Credit Limit"
+msgstr "கடன் வரம்பு"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_currency_id
+msgid "Currency"
+msgstr "நாணய"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_property_stock_customer
+msgid "Customer Location"
+msgstr "வாடிக்கையாளர் இருப்பிடம்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_property_payment_term_id
+msgid "Customer Payment Terms"
+msgstr "வாடிக்கையாளர் கட்டண விதிமுறைகள்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_date
+msgid "Date"
+msgstr "தேதி"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,help:common_custom_membership.field_op_member_message_last_post
+msgid "Date of the last message posted on the record."
+msgstr "பதிவில் இடுகையிடப்பட்ட கடைசி செய்தியின் தேதி."
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_trust
+msgid "Degree of trust you have in this debtor"
+msgstr "இந்த கடனாளியின் மீது உங்களுக்கு இருக்கும் நம்பிக்கை பட்டம்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_admission_member_display_name
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_admission_register_member_display_name
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_district_display_name
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_language_wizard_display_name
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_display_name
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_panchayat_display_name
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_union_display_name
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_whatsapp_message_wizard_display_name
+#: model:ir.model.fields,field_description:common_custom_membership.field_wizard_op_member_display_name
+msgid "Display Name"
+msgstr "காட்சி பெயர்"
+
+#. module: common_custom_membership
+#: model:ir.actions.act_window,name:common_custom_membership.act_open_op_district_view
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_admission_member_district_id
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_admission_register_member_district_id
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_district_id
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_sms_district_id
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_union_district_id
+#: model:ir.ui.menu,name:common_custom_membership.menu_op_district_sub
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_admission_member_search
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_admission_register_member_search
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_district_form
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_district_search
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_district_tree
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_member_search
+#: model:ir.ui.view,arch_db:common_custom_membership.view__op_sms_search
+#: model:ir.ui.view,arch_db:common_custom_membership.view__op_sms_form
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_union_search
+msgid "District"
+msgstr "மாவட்டம்"
+
+#. module: common_custom_membership
+#: model:res.groups,name:common_custom_membership.group_op_district_admin
+msgid "District Admin"
+msgstr "மாவட்ட நிர்வாகம்"
+
+#. module: common_custom_membership
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_admission_member_graph
+msgid "District By Admission"
+msgstr "சேர்க்கை மூலம் மாவட்டம்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_district_district_name
+msgid "District Name"
+msgstr "மாவட்ட பெயர்"
+
+#. module: common_custom_membership
+#: code:addons/common_custom_membership/models/district.py:29
+#: sql_constraint:op.district:0
+#, python-format
+msgid "District Name already exists!"
+msgstr "மாவட்ட பெயர் ஏற்கனவே உள்ளது!"
+
+#. module: common_custom_membership
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_admission_register_member_form
+#: selection:op.admission.member,state:0
+#: selection:op.admission.register.member,state:0
+msgid "Done"
+msgstr "முடிந்தது"
+
+#. module: common_custom_membership
+#: selection:op.admission.member,state:0
+#: selection:op.admission.register.member,state:0
+msgid "Draft"
+msgstr "வரைவு"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_is_driver
+msgid "Driver"
+msgstr "ஓட்டுனர்"
+
+#. module: common_custom_membership
+#: model:ir.ui.view,arch_db:common_custom_membership.view_student_edit_form
+msgid "Edit Group"
+msgstr "குழுவைத் திருத்து"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,help:common_custom_membership.field_op_member_partner_share
+msgid "Either customer (no user), either shared user. Indicated the current partner is a customer without access or with a limited access created for sharing data."
+msgstr "ஒன்று வாடிக்கையாளர் (பயனர் இல்லை), பகிரப்பட்ட பயனர். தற்போதைய கூட்டாளர் அணுகல் இல்லாத வாடிக்கையாளர் அல்லது தரவைப் பகிர்வதற்காக வரையறுக்கப்பட்ட அணுகல் கொண்டவர் என்பதைக் குறிக்கிறது. "
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_admission_member_email
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_email
+#: model:ir.model.fields,field_description:base.field_res_partner_email
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_admission_member_form
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_member_form
+msgid "Email"
+msgstr "மின்னஞ்சல்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_admission_member_emergency_contact
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_emergency_contact
+msgid "Emergency Contact"
+msgstr "அவசர தொடர்பு"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_employee
+msgid "Employee"
+msgstr "ஊழியர்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_admission_register_member_end_date
+msgid "End Date"
+msgstr "கடைசி தேதி"
+
+#. module: common_custom_membership
+#: code:addons/common_custom_membership/models/admission_register.py:118
+#, python-format
+msgid "End Date cannot be set before                 Start Date."
+msgstr "தொடக்க தேதிக்கு முன் இறுதி தேதியை அமைக்க முடியாது."
+
+#. module: common_custom_membership
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_admission_member_form
+msgid "Enroll"
+msgstr "பதிவுசெய்க"
+
+#. module: common_custom_membership
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_admission_member_search
+msgid "Enrolled"
+msgstr "சேர்ந்தார்"
+
+#. module: common_custom_membership
+#: selection:op.admission.member,gender:0
+#: selection:op.member,gender:0
+msgid "Female"
+msgstr "பெண்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_admission_member_name
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_admission_member_form
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_member_form
+msgid "First Name"
+msgstr "முதல் பெயர்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_property_account_position_id
+msgid "Fiscal Position"
+msgstr "நிதி நிலை"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_message_follower_ids
+msgid "Followers"
+msgstr "பின்தொடர்பவர்கள்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_message_channel_ids
+msgid "Followers (Channels)"
+msgstr "பின்தொடர்பவர்கள் (சேனல்கள்)"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_message_partner_ids
+msgid "Followers (Partners)"
+msgstr "பின்தொடர்பவர்கள் (கூட்டாளர்கள்)"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,help:common_custom_membership.field_op_member_email_formatted
+msgid "Format email address \"Name <email@domain>\""
+msgstr "மின்னஞ்சல் முகவரியை \ "பெயர் <மின்னஞ்சல் @ கள> \" வடிவமைக்கவும்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_email_formatted
+msgid "Formatted Email"
+msgstr "வடிவமைக்கப்பட்ட மின்னஞ்சல்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_admission_member_gender
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_gender
+msgid "Gender"
+msgstr "பாலினம்"
+
+#. module: common_custom_membership
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_admission_member_search
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_admission_register_member_search
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_district_search
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_member_search
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_panchayat_search
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_union_search
+msgid "Group By..."
+msgstr "குழு மூலம் ..."
+
+#. module: common_custom_membership
+#: model:ir.ui.menu,name:common_custom_membership.msg_menu
+msgid "Group SMS"
+msgstr "குழு எஸ்.எம்.எஸ்"
+
+#. module: common_custom_membership
+#: model:ir.actions.act_window,name:common_custom_membership.act_open_op_sms_view
+msgid "Group sms"
+msgstr "குழு எஸ்.எம்.எஸ்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_has_unreconciled_entries
+msgid "Has Unreconciled Entries"
+msgstr "சமரசமில்லாத உள்ளீடுகள் உள்ளன"
+
+#. module: common_custom_membership
+#: model:ir.module.category,description:common_custom_membership.module_category_membership
+msgid "Helps you manage your institutes different-different users."
+msgstr "உங்கள் நிறுவனங்களை வெவ்வேறு பயனர்களை நிர்வகிக்க உதவுகிறது."
+
+#. module: common_custom_membership
+#: model:res.groups,name:common_custom_membership.make_hide_top_menu
+msgid "Hide Top menu"
+msgstr "மேல் மெனுவை மறைக்க"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_admission_member_id
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_admission_register_member_id
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_district_id
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_language_wizard_id
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_id
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_panchayat_id
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_union_id
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_whatsapp_message_wizard_id
+#: model:ir.model.fields,field_description:common_custom_membership.field_wizard_op_member_id
+msgid "ID"
+msgstr "ஐடி"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_im_status
+msgid "IM Status"
+msgstr "IM நிலை"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,help:common_custom_membership.field_op_member_message_unread
+msgid "If checked new messages require your attention."
+msgstr "சரிபார்க்கப்பட்டால் புதிய செய்திகளுக்கு உங்கள் கவனம் தேவை."
+
+#. module: common_custom_membership
+#: model:ir.model.fields,help:common_custom_membership.field_op_member_message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "சரிபார்க்கப்பட்டால், புதிய செய்திகளுக்கு உங்கள் கவனம் தேவை."
+
+#. module: common_custom_membership
+#: model:ir.model.fields,help:common_custom_membership.field_op_member_opt_out
+msgid "If opt-out is checked, this contact has refused to receive emails for mass mailing and marketing campaign. Filter 'Available for Mass Mailing' allows users to filter the partners when performing mass mailing."
+msgstr "விலகல் சரிபார்க்கப்பட்டால், இந்த தொடர்பு வெகுஜன அஞ்சல் மற்றும் சந்தைப்படுத்தல் பிரச்சாரத்திற்கான மின்னஞ்சல்களைப் பெற மறுத்துவிட்டது. 'மாஸ் மெயிலிங்கிற்கு கிடைக்கிறது' என்ற வடிகட்டி வெகுஜன அஞ்சல் செய்யும் போது கூட்டாளர்களை வடிகட்ட பயனர்களை அனுமதிக்கிறது. "
+
+#. module: common_custom_membership
+#: model:ir.model.fields,help:common_custom_membership.field_op_member_team_id
+msgid "If set, this sales channel will be used for sales and assignations related to this partner"
+msgstr "அமைக்கப்பட்டால், இந்த கூட்டாளர் தொடர்பான விற்பனை மற்றும் பணிகளுக்கு இந்த விற்பனை சேனல் பயன்படுத்தப்படும்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,help:common_custom_membership.field_op_member_lang
+msgid "If the selected language is loaded in the system, all documents related to this contact will be printed in this language. If not, it will be English."
+msgstr "தேர்ந்தெடுக்கப்பட்ட மொழி கணினியில் ஏற்றப்பட்டால், இந்த தொடர்பு தொடர்பான அனைத்து ஆவணங்களும் இந்த மொழியில் அச்சிடப்படும். இல்லையென்றால், அது ஆங்கிலமாக இருக்கும். "
+
+#. module: common_custom_membership
+#: model:ir.model.fields,help:common_custom_membership.field_op_language_wizard_overwrite
+msgid "If you check this box, your customized translations will be overwritten and replaced by the official ones."
+msgstr "இந்த பெட்டியை நீங்கள் சரிபார்த்தால், உங்கள் தனிப்பயனாக்கப்பட்ட மொழிபெயர்ப்புகள் மேலெழுதப்பட்டு அதிகாரப்பூர்வமாக மாற்றப்படும்."
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_image
+msgid "Image"
+msgstr "படம்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_industry_id
+msgid "Industry"
+msgstr "தொழில்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_ref
+msgid "Internal Reference"
+msgstr "உள் குறிப்பு"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_invoice_warn
+msgid "Invoice"
+msgstr "விலைப்பட்டியல்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_invoice_ids
+msgid "Invoices"
+msgstr "விலைப்பட்டியல்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_admission_member_is_member
+msgid "Is Already Member"
+msgstr "ஏற்கனவே உறுப்பினராக உள்ளார்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_message_is_follower
+msgid "Is Follower"
+msgstr "பின்தொடர்பவர்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_is_company
+msgid "Is a Company"
+msgstr "ஒரு நிறுவனம்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_customer
+msgid "Is a Customer"
+msgstr "ஒரு வாடிக்கையாளர்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_supplier
+msgid "Is a Vendor"
+msgstr "ஒரு விற்பனையாளர்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_function
+msgid "Job Position"
+msgstr "வேலை நிலை"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_journal_item_count
+msgid "Journal Items"
+msgstr "பத்திரிகை பொருட்கள்"
+
+#. module: common_custom_membership
+#: model:ir.actions.act_window,name:common_custom_membership.act_open_op_language_view
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_language_wizard_lang
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_lang
+#: model:ir.ui.menu,name:common_custom_membership.lang_menu
+#: model:ir.ui.menu,name:common_custom_membership.language_menu_root
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_member_search
+msgid "Language"
+msgstr "மொழி"
+
+#. module: common_custom_membership
+#: code:addons/common_custom_membership/wizard/language.py:35
+#, python-format
+msgid "Language Pack"
+msgstr "மொழி Pack"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_message_last_post
+msgid "Last Message Date"
+msgstr "கடைசி செய்தி தேதி"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_admission_member___last_update
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_admission_register_member___last_update
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_district___last_update
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_language_wizard___last_update
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member___last_update
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_panchayat___last_update
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_union___last_update
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_whatsapp_message_wizard___last_update
+#: model:ir.model.fields,field_description:common_custom_membership.field_wizard_op_member___last_update
+msgid "Last Modified on"
+msgstr "கடைசியாக மாற்றியமைக்கப்பட்டது"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_admission_member_last_name
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_last_name
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_admission_member_form
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_admission_member_search
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_member_form
+msgid "Last Name"
+msgstr "கடைசி பெயர்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_admission_member_write_uid
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_admission_register_member_write_uid
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_district_write_uid
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_language_wizard_write_uid
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_write_uid
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_panchayat_write_uid
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_union_write_uid
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_sms_write_uid
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_whatsapp_message_wizard_write_uid
+#: model:ir.model.fields,field_description:common_custom_membership.field_wizard_op_member_write_uid
+msgid "Last Updated by"
+msgstr "கடைசியாக புதுப்பிக்கப்பட்டது"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_admission_member_write_date
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_admission_register_member_write_date
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_district_write_date
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_language_wizard_write_date
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_write_date
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_panchayat_write_date
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_union_write_date
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_sms_write_date
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_whatsapp_message_wizard_write_date
+#: model:ir.model.fields,field_description:common_custom_membership.field_wizard_op_member_write_date
+msgid "Last Updated on"
+msgstr "கடைசியாக புதுப்பிக்கப்பட்டது"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_calendar_last_notif_ack
+msgid "Last notification marked as read from base Calendar"
+msgstr "கடைசி அறிவிப்பு அடிப்படை காலெண்டரிலிருந்து படித்ததாக குறிக்கப்பட்டுள்ளது"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,help:common_custom_membership.field_op_member_last_time_entries_checked
+msgid "Last time the invoices & payments matching was performed for this partner. It is set either if there's not at least an unreconciled debit and an unreconciled credit or if you click the \"Done\" button."
+msgstr "கடைசியாக இந்த பங்குதாரருக்கு விலைப்பட்டியல் மற்றும் கொடுப்பனவு பொருத்தம் செய்யப்பட்டது. குறைந்தது சமரசம் செய்யப்படாத பற்று மற்றும் சமரசம் செய்யப்படாத கடன் இல்லாவிட்டால் அல்லது \ "முடிந்தது \" பொத்தானைக் கிளிக் செய்தால் இது அமைக்கப்படுகிறது.
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_last_time_entries_checked
+msgid "Latest Invoices & Payments Matching Date"
+msgstr "சமீபத்திய விலைப்பட்டியல் மற்றும் கொடுப்பனவுகள் பொருந்தும் தேதி"
+
+#. module: common_custom_membership
+#: model:ir.ui.view,arch_db:common_custom_membership.view_language_form
+msgid "Load"
+msgstr "ஏற்றவும்"
+
+#. module: common_custom_membership
+#: selection:op.admission.member,gender:0
+#: selection:op.member,gender:0
+msgid "Male"
+msgstr "ஆண்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_admission_register_member_max_count
+msgid "Maximum No. of Admission"
+msgstr "சேர்க்கைக்கான அதிகபட்ச எண்ணிக்கை"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_image_medium
+msgid "Medium-sized image"
+msgstr "நடுத்தர அளவிலான படம்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,help:common_custom_membership.field_op_member_image_medium
+msgid "Medium-sized image of this contact. It is automatically resized as a 128x128px image, with aspect ratio preserved. Use this field in form views or some kanban views."
+msgstr "இந்த தொடர்பின் நடுத்தர அளவிலான படம். இது தானாகவே 128x128px படமாக மறுஅளவாக்கம் செய்யப்படுகிறது, விகித விகிதம் பாதுகாக்கப்படுகிறது. படிவக் காட்சிகள் அல்லது சில கான்பன் காட்சிகளில் இந்த புலத்தைப் பயன்படுத்தவும். "
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_meeting_ids
+msgid "Meetings"
+msgstr "கூட்டங்கள்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_admission_member_member_id
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_admission_member_form
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_member_form
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_member_search
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_member_tree
+#: model:res.groups,name:common_custom_membership.group_op_member
+msgid "Member"
+msgstr "உறுப்பினர்"
+
+#. module: common_custom_membership
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_member_form
+msgid "Member Information"
+msgstr "உறுப்பினர் தகவல்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_sms_sms_line_ids
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_sms_tree
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_sms_view
+msgid "Members info"
+msgstr "உறுப்பினரின் தகவல்"
+
+#. module: common_custom_membership
+#: model:ir.actions.act_window,name:common_custom_membership.act_open_op_member_view
+#: model:ir.model.fields,field_description:common_custom_membership.field_wizard_op_member_member_ids
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_sms_line_member_id
+#: model:ir.ui.menu,name:common_custom_membership.menu_op_member_root
+#: model:ir.ui.view,arch_db:common_custom_membership.op_member_user_create_view
+#: model:ir.ui.view,arch_db:common_custom_membership.view_sms_form
+msgid "Members"
+msgstr "உறுப்பினர்கள்"
+
+#. module: common_custom_membership
+#: model:ir.module.category,name:common_custom_membership.module_category_membership
+msgid "Membership"
+msgstr "உறுப்பினர்"
+
+#. module: common_custom_membership
+#: model:ir.ui.menu,name:common_custom_membership.menu_membership_root
+msgid "Membership Management"
+msgstr "உறுப்பினர் மேலாண்மை"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_whatsapp_message_wizard_message
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_sms_message
+msgid "Message"
+msgstr "செய்தி"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_invoice_warn_msg
+msgid "Message for Invoice"
+msgstr "விலைப்பட்டியல் செய்தி"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_purchase_warn_msg
+msgid "Message for Purchase Order"
+msgstr "கொள்முதல் ஆணைக்கான செய்தி"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_sale_warn_msg
+msgid "Message for Sales Order"
+msgstr "விற்பனை ஆணைக்கான செய்தி"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_picking_warn_msg
+msgid "Message for Stock Picking"
+msgstr "பங்கு எடுப்பதற்கான செய்தி"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_message_ids
+msgid "Messages"
+msgstr "செய்திகள்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_admission_member_middle_name
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_middle_name
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_admission_member_form
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_member_form
+msgid "Middle Name"
+msgstr "மத்திய பெயர்"
+
+#. module: common_custom_membership
+#: code:addons/common_custom_membership/models/admission_register.py:128
+#, python-format
+msgid "Min Admission can't be greater than Max Admission"
+msgstr "குறைந்தபட்ச சேர்க்கை அதிகபட்ச சேர்க்கையை விட அதிகமாக இருக்க முடியாது"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_admission_register_member_min_count
+msgid "Minimum No. of Admission"
+msgstr "சேர்க்கைக்கான குறைந்தபட்ச எண்ணிக்கை"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_admission_member_mobile
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_mobile
+#: model:ir.model.fields,field_description:base.field_res_partner_mobile
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_sms_line_mobile
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_admission_member_form
+msgid "Mobile"
+msgstr "கைபேசி"
+
+#. module: common_custom_membership
+#: model:ir.ui.menu,name:common_custom_membership.menu_multimedia
+msgid "Multimedia"
+msgstr "மல்டிமீடியா"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_admission_register_member_name
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_name
+msgid "Name"
+msgstr "பெயர்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_admission_member_nationality
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_nationality
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_member_search
+msgid "Nationality"
+msgstr "தேசியம்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "அடுத்த செயல்பாட்டு காலக்கெடு"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_activity_summary
+msgid "Next Activity Summary"
+msgstr "அடுத்த செயல்பாட்டு சுருக்கம்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_activity_type_id
+msgid "Next Activity Type"
+msgstr "அடுத்த செயல்பாட்டு வகை"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_admission_member_nbr
+msgid "No of Admission"
+msgstr "சேர்க்கை எண்ணிக்கை"
+
+#. module: common_custom_membership
+#: code:addons/common_custom_membership/models/admission_register.py:126
+#, python-format
+msgid "No of Admission should be positive!"
+msgstr "சேர்க்கை எண்ணிக்கை நேர்மறையாக இருக்க வேண்டும்!"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_comment
+msgid "Notes"
+msgstr "குறிப்புகள்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_message_needaction_counter
+msgid "Number of Actions"
+msgstr "செயல்களின் எண்ணிக்கை"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,help:common_custom_membership.field_op_member_message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr "செயல் தேவைப்படும் செய்திகளின் எண்ணிக்கை"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,help:common_custom_membership.field_op_member_message_unread_counter
+msgid "Number of unread messages"
+msgstr "படிக்காத செய்திகளின் எண்ணிக்கை"
+
+#. module: common_custom_membership
+#: selection:op.admission.member,blood_group:0
+#: selection:op.member,blood_group:0
+msgid "O+ve"
+msgstr "O+ve"
+
+#. module: common_custom_membership
+#: selection:op.admission.member,blood_group:0
+#: selection:op.member,blood_group:0
+msgid "O-ve"
+msgstr "O-ve"
+
+#. module: common_custom_membership
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_admission_member_form
+msgid "Open Member Profile"
+msgstr "உறுப்பினர் சுயவிவரத்தைத் திறக்கவும்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_opportunity_ids
+msgid "Opportunities"
+msgstr "வாய்ப்புகள்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_opportunity_count
+msgid "Opportunity"
+msgstr "வாய்ப்பு"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_opt_out
+msgid "Opt-Out"
+msgstr "விலகல்"
+
+#. module: common_custom_membership
+#: selection:op.admission.member,gender:0
+#: selection:op.member,gender:0
+msgid "Other"
+msgstr "மற்றவை"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_language_wizard_overwrite
+msgid "Overwrite Existing Terms"
+msgstr "இருக்கும் விதிமுறைகளை மேலெழுதும்"
+
+#. module: common_custom_membership
+#: model:ir.actions.act_window,name:common_custom_membership.act_open_op_panchayat_view
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_admission_member_panchayat_id
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_admission_register_member_panchayat_id
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_panchayat_id
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_sms_panchayat_id
+#: model:ir.ui.menu,name:common_custom_membership.menu_op_panchayat_sub
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_admission_member_search
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_admission_register_member_search
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_member_search
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_sms_search
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_sms_form
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_panchayat_form
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_panchayat_search
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_panchayat_tree
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_union_form
+msgid "Panchayat"
+msgstr "பஞ்சாயத்து"
+
+#. module: common_custom_membership
+#: model:res.groups,name:common_custom_membership.group_op_panchayat_admin
+msgid "Panchayat Admin"
+msgstr "பஞ்சாயத்து நிர்வாகம்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_panchayat_panchayat_name
+msgid "Panchayat Name"
+msgstr "பஞ்சாயத்து பெயர்"
+
+#. module: common_custom_membership
+#: code:addons/common_custom_membership/models/panchayat.py:29
+#: sql_constraint:op.panchayat:0
+#, python-format
+msgid "Panchayat Name already exists!"
+msgstr "பஞ்சாயத்து பெயர் ஏற்கனவே உள்ளது!"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_union_panchayat_ids
+msgid "Panchayat(s)"
+msgstr "பஞ்சாயத்து (கள்)"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_parent_name
+msgid "Parent name"
+msgstr "பெற்றோர் பெயர்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_admission_member_partner_id
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_partner_id
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_member_form
+msgid "Partner"
+msgstr "கூட்டாளர்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_debit_limit
+msgid "Payable Limit"
+msgstr "செலுத்த வேண்டிய வரம்பு"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_payment_token_ids
+msgid "Payment Tokens"
+msgstr "கட்டண டோக்கன்கள்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_admission_member_phone
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_phone
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_sms_line_phone
+#: model:ir.model.fields,field_description:base.field_res_partner_phone
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_admission_member_form
+msgid "Phone"
+msgstr "தொலைபேசி"
+
+#. module: common_custom_membership
+#: model:ir.ui.menu,name:common_custom_membership.menu_op_member_main
+msgid "Profile"
+msgstr "சுயவிவரம்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_purchase_warn
+msgid "Purchase Order"
+msgstr "கொள்முதல் ஆணை"
+
+#. module: common_custom_membership
+#: code:addons/common_custom_membership/models/group_sms.py:118
+#, python-format
+msgid "Reduce the message length to be within 55 characters when using Tamil Font and 115 when using Engligh font."
+msgstr "தமிழ் எழுத்துருவைப் பயன்படுத்தும் போது செய்தி நீளத்தை 55 எழுத்துகளுக்கும், 115 ஆங்கில எழுத்துருவைப் பயன்படுத்தும்போது 115 ஆகவும் குறைக்கவும்."
+
+#. module: common_custom_membership
+#: model:ir.actions.act_window,name:common_custom_membership.act_open_op_admission_member_view
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_admission_member_form
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_admission_member_search
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_admission_member_tree
+msgid "Registration"
+msgstr "பதிவு"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_parent_id
+msgid "Related Company"
+msgstr "தொடர்புடைய நிறுவனம்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_activity_user_id
+msgid "Responsible"
+msgstr "பொறுப்பு"
+
+#. module: common_custom_membership
+#: model:ir.ui.view,arch_db:common_custom_membership.view_sms_tree
+msgid "SMS Registration"
+msgstr "எஸ்எம்எஸ் பதிவு"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_property_product_pricelist
+msgid "Sale Pricelist"
+msgstr "விற்பனை விலைப்பட்டியல்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_team_id
+msgid "Sales Channel"
+msgstr "விற்பனை சேனல்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_sale_order_ids
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_sale_warn
+msgid "Sales Order"
+msgstr "விற்பனை ஆணை"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_user_id
+msgid "Salesperson"
+msgstr "விற்பனையாளர்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,help:common_custom_membership.field_op_member_invoice_warn
+#: model:ir.model.fields,help:common_custom_membership.field_op_member_picking_warn
+#: model:ir.model.fields,help:common_custom_membership.field_op_member_purchase_warn
+#: model:ir.model.fields,help:common_custom_membership.field_op_member_sale_warn
+msgid "Selecting the \"Warning\" option will notify user with the message, Selecting \"Blocking Message\" will throw an exception with the message and block the flow. The Message has to be written in the next field."
+msgstr "Warning "எச்சரிக்கை \" விருப்பத்தைத் தேர்ந்தெடுப்பது செய்தியுடன் பயனருக்குத் தெரிவிக்கும், Message "செய்தியைத் தடுப்பது \" என்பதைத் தேர்ந்தெடுப்பது செய்தியுடன் விதிவிலக்கைத் தூக்கி, ஓட்டத்தைத் தடுக்கும். செய்தி அடுத்த புலத்தில் எழுதப்பட வேண்டும். "
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_self
+msgid "Self"
+msgstr "சுய"
+
+#. module: common_custom_membership
+#: model:ir.ui.view,arch_db:common_custom_membership.op_whatsapp_send_msg_wizard
+msgid "Send"
+msgstr "அனுப்பு"
+
+#. module: common_custom_membership
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_admission_register_member_form
+msgid "Set to Draft"
+msgstr "Set to Draft"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_partner_share
+msgid "Share Partner"
+msgstr "பங்குதாரர் பகிர்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_signup_expiration
+msgid "Signup Expiration"
+msgstr "பதிவுபெறும் காலாவதி"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_signup_token
+msgid "Signup Token"
+msgstr "பதிவுபெறும் டோக்கன்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_signup_type
+msgid "Signup Token Type"
+msgstr "பதிவுபெறும் டோக்கன் வகை"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_signup_valid
+msgid "Signup Token is Valid"
+msgstr "பதிவுபெறும் டோக்கன் செல்லுபடியாகும்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_signup_url
+msgid "Signup URL"
+msgstr "பதிவு URL"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_image_small
+msgid "Small-sized image"
+msgstr "சிறிய அளவிலான படம்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,help:common_custom_membership.field_op_member_image_small
+msgid "Small-sized image of this contact. It is automatically resized as a 64x64px image, with aspect ratio preserved. Use this field anywhere a small image is required."
+msgstr "இந்த தொடர்பின் சிறிய அளவிலான படம். இது தானாகவே 64x64px படமாக மறுஅளவிடப்படுகிறது, விகித விகிதம் பாதுகாக்கப்படுகிறது. ஒரு சிறிய படம் தேவைப்படும் எங்கும் இந்த புலத்தைப் பயன்படுத்தவும். "
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_admission_register_member_start_date
+msgid "Start Date"
+msgstr "தொடக்க தேதி"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_admission_member_state
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_activity_state
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_state_id
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_admission_member_form
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_member_form
+msgid "State"
+msgstr "மாநிலம்"
+
+#. module: common_custom_membership
+#: model:res.groups,name:common_custom_membership.group_op_membership_admin
+msgid "State Admin"
+msgstr "மாநில நிர்வாகம்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_admission_member_state_id
+msgid "States"
+msgstr "மாநிலங்களில்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_admission_register_member_state
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_language_wizard_state
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_admission_member_search
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_admission_register_member_search
+msgid "Status"
+msgstr "நிலை"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,help:common_custom_membership.field_op_member_activity_state
+msgid "Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr "செயல்பாடுகளின் அடிப்படையில் நிலை \ n"
+"தாமதமானது: உரிய தேதி ஏற்கனவே கடந்துவிட்டது \ n"
+"இன்று: செயல்பாட்டு தேதி இன்று \ n"
+"திட்டமிடப்பட்டது: எதிர்கால நடவடிக்கைகள்."
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_picking_warn
+msgid "Stock Picking"
+msgstr "பங்கு எடுப்பது"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_admission_member_street
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_street
+msgid "Street"
+msgstr "தெரு"
+
+#. module: common_custom_membership
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_admission_member_form
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_member_form
+msgid "Street..."
+msgstr "தெரு..."
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_admission_member_street2
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_street2
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_member_form
+msgid "Street2"
+msgstr "தெரு2"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_is_student
+msgid "Student"
+msgstr "மாணவர்"
+
+#. module: common_custom_membership
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_admission_member_form
+msgid "Submit"
+msgstr "சமர்ப்பிக்கவும்"
+
+#. module: common_custom_membership
+#: selection:op.admission.member,state:0
+msgid "Submitted"
+msgstr "சமர்ப்பிக்கப்பட்டது"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_property_purchase_currency_id
+msgid "Supplier Currency"
+msgstr "சப்ளையர் நாணயம்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_vat
+msgid "TIN"
+msgstr "TIN"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_category_id
+msgid "Tags"
+msgstr "குறிச்சொற்கள்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,help:common_custom_membership.field_op_member_vat
+msgid "Tax Identification Number. Fill it if the company is subjected to taxes. Used by the some of the legal statements."
+msgstr "வரி அடையாள எண். நிறுவனம் வரிகளுக்கு உட்பட்டால் அதை நிரப்பவும். சில சட்ட அறிக்கைகளால் பயன்படுத்தப்படுகிறது. "
+
+#. module: common_custom_membership
+#: model:ir.model.fields,help:common_custom_membership.field_op_member_property_account_position_id
+msgid "The fiscal position will determine taxes and accounts used for the partner."
+msgstr "நிதி நிலை பங்குதாரருக்கு பயன்படுத்தப்படும் வரிகளையும் கணக்குகளையும் தீர்மானிக்கும்."
+
+#. module: common_custom_membership
+#: model:ir.model.fields,help:common_custom_membership.field_op_member_user_id
+msgid "The internal user that is in charge of communicating with this contact if any."
+msgstr "ஏதேனும் இருந்தால் இந்த தொடர்புடன் தொடர்புகொள்வதற்கு பொறுப்பான உள் பயனர்."
+
+#. module: common_custom_membership
+#: model:ir.model.fields,help:common_custom_membership.field_op_member_has_unreconciled_entries
+msgid "The partner has at least one unreconciled debit and credit since last time the invoices & payments matching was performed."
+msgstr "கடைசியாக விலைப்பட்டியல் மற்றும் கொடுப்பனவு பொருத்தம் செய்யப்பட்டதிலிருந்து பங்குதாரருக்கு குறைந்தது ஒரு சமரசமற்ற பற்று மற்றும் கடன் உள்ளது."
+
+#. module: common_custom_membership
+#: model:ir.model.fields,help:common_custom_membership.field_op_member_tz
+msgid "The partner's timezone, used to output proper date and time values inside printed reports. It is important to set a value for this field. You should use the same timezone that is otherwise used to pick and render date and time values: your computer's timezone."
+msgstr "பங்குதாரரின் நேர மண்டலம், அச்சிடப்பட்ட அறிக்கைகளுக்குள் சரியான தேதி மற்றும் நேர மதிப்புகளை வெளியிடுவதற்குப் பயன்படுகிறது. இந்தத் துறைக்கு ஒரு மதிப்பை அமைப்பது முக்கியம். தேதி மற்றும் நேர மதிப்புகளைத் தேர்ந்தெடுத்து வழங்குவதற்குப் பயன்படுத்தப்படும் அதே நேர மண்டலத்தை நீங்கள் பயன்படுத்த வேண்டும்: உங்கள் கணினியின் நேர மண்டலம் . "
+
+#. module: common_custom_membership
+#: model:ir.ui.view,arch_db:common_custom_membership.view_language_form
+msgid "The selected language has been successfully installed.You must change the preferences of the user to view the changes."
+msgstr "தேர்ந்தெடுக்கப்பட்ட மொழி வெற்றிகரமாக நிறுவப்பட்டுள்ளது. மாற்றங்களைக் காண பயனரின் விருப்பங்களை நீங்கள் மாற்ற வேண்டும்."
+
+#. module: common_custom_membership
+#: model:ir.model.fields,help:common_custom_membership.field_op_member_property_account_payable_id
+msgid "This account will be used instead of the default one as the payable account for the current partner"
+msgstr "நடப்பு கூட்டாளருக்கு செலுத்த வேண்டிய கணக்காக இயல்புநிலை கணக்கிற்கு பதிலாக இந்த கணக்கு பயன்படுத்தப்படும்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,help:common_custom_membership.field_op_member_property_account_receivable_id
+msgid "This account will be used instead of the default one as the receivable account for the current partner"
+msgstr "நடப்பு கூட்டாளருக்கு பெறத்தக்க கணக்காக இயல்புநிலை கணக்கிற்கு பதிலாக இந்த கணக்கு பயன்படுத்தப்படும்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,help:common_custom_membership.field_op_member_property_purchase_currency_id
+msgid "This currency will be used, instead of the default one, for purchases from the current partner"
+msgstr "இந்த நாணயம் இயல்புநிலைக்கு பதிலாக, தற்போதைய கூட்டாளரிடமிருந்து வாங்குவதற்கு பயன்படுத்தப்படும்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,help:common_custom_membership.field_op_member_image
+msgid "This field holds the image used as avatar for this contact, limited to 1024x1024px"
+msgstr "இந்த தொடர்பு இந்த அவதாரமாக அவதாரமாகப் பயன்படுத்தப்படும் படத்தை 1024x1024px ஆக வரையறுக்கப்பட்டுள்ளது"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,help:common_custom_membership.field_op_member_property_supplier_payment_term_id
+msgid "This payment term will be used instead of the default one for purchase orders and vendor bills"
+msgstr "கொள்முதல் ஆர்டர்கள் மற்றும் விற்பனையாளர் பில்களுக்கு இயல்புநிலைக்கு பதிலாக இந்த கட்டணச் சொல் பயன்படுத்தப்படும்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,help:common_custom_membership.field_op_member_property_payment_term_id
+msgid "This payment term will be used instead of the default one for sales orders and customer invoices"
+msgstr "விற்பனை ஆர்டர்கள் மற்றும் வாடிக்கையாளர் விலைப்பட்டியல்களுக்கு இயல்புநிலைக்கு பதிலாக இந்த கட்டணச் சொல் பயன்படுத்தப்படும் "
+
+#. module: common_custom_membership
+#: model:ir.model.fields,help:common_custom_membership.field_op_member_property_product_pricelist
+msgid "This pricelist will be used, instead of the default one, for sales to the current partner"
+msgstr "இந்த விலைப்பட்டியல் இயல்புநிலைக்கு பதிலாக, தற்போதைய கூட்டாளருக்கு விற்பனை செய்ய பயன்படுத்தப்படும்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,help:common_custom_membership.field_op_member_property_stock_customer
+msgid "This stock location will be used, instead of the default one, as the destination location for goods you send to this partner"
+msgstr "இந்த பங்கு இருப்பிடம் இயல்புநிலைக்கு பதிலாக, இந்த கூட்டாளருக்கு நீங்கள் அனுப்பும் பொருட்களுக்கான இலக்கு இருப்பிடமாக பயன்படுத்தப்படும்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,help:common_custom_membership.field_op_member_property_stock_supplier
+msgid "This stock location will be used, instead of the default one, as the source location for goods you receive from the current partner"
+msgstr "இந்த பங்கு இருப்பிடம் இயல்புநிலைக்கு பதிலாக, தற்போதைய கூட்டாளரிடமிருந்து நீங்கள் பெறும் பொருட்களுக்கான மூல இருப்பிடமாக பயன்படுத்தப்படும்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_tz
+msgid "Timezone"
+msgstr "Timezone"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_tz_offset
+msgid "Timezone offset"
+msgstr "Timezone offset"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_admission_member_title
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_title
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_admission_member_form
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_member_form
+msgid "Title"
+msgstr "தலைப்பு"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_total_invoiced
+msgid "Total Invoiced"
+msgstr "மொத்த விலைப்பட்டியல்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_debit
+msgid "Total Payable"
+msgstr "செலுத்த வேண்டிய மொத்தம்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_credit
+msgid "Total Receivable"
+msgstr "பெறத்தக்க மொத்தம்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,help:common_custom_membership.field_op_member_credit
+msgid "Total amount this customer owes you."
+msgstr "இந்த வாடிக்கையாளர் உங்களுக்கு செலுத்த வேண்டிய மொத்த தொகை."
+
+#. module: common_custom_membership
+#: model:ir.model.fields,help:common_custom_membership.field_op_member_debit
+msgid "Total amount you have to pay to this vendor."
+msgstr "இந்த விற்பனையாளருக்கு நீங்கள் செலுத்த வேண்டிய மொத்த தொகை."
+
+#. module: common_custom_membership
+#: model:ir.actions.act_window,name:common_custom_membership.act_open_op_union_view
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_admission_member_union_id
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_admission_register_member_union_id
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_union_id
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_sms_union_id
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_panchayat_union_id
+#: model:ir.ui.menu,name:common_custom_membership.menu_op_union_sub
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_admission_member_search
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_admission_register_member_search
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_district_form
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_member_search
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_sms_search
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_sms_form
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_panchayat_search
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_union_form
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_union_search
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_union_tree
+msgid "Union"
+msgstr "ஒன்றியம்"
+
+#. module: common_custom_membership
+#: model:res.groups,name:common_custom_membership.group_op_union_admin
+msgid "Union Admin"
+msgstr "ஒன்றியம் நிர்வாகம்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_union_union_name
+msgid "Union Name"
+msgstr "ஒன்றியம் பெயர்"
+
+#. module: common_custom_membership
+#: code:addons/common_custom_membership/models/union.py:30
+#: sql_constraint:op.union:0
+#, python-format
+msgid "Union Name already exists!"
+msgstr "ஒன்றியம் பெயர் ஏற்கனவே உள்ளது!"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_district_union_ids
+msgid "Union(s)"
+msgstr "ஒன்றியம்(கள்)"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_message_unread
+msgid "Unread Messages"
+msgstr "படிக்காத செய்திகள்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_message_unread_counter
+msgid "Unread Messages Counter"
+msgstr "படிக்காத செய்திகள் கவுண்டர்"
+
+#. module: common_custom_membership
+#: model:ir.actions.act_url,name:common_custom_membership.action_uolo_url
+msgid "Uolo Page"
+msgstr "Uolo Page"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,help:common_custom_membership.field_op_member_type
+msgid "Used to select automatically the right address according to the context in sales and purchases documents."
+msgstr "விற்பனை மற்றும் கொள்முதல் ஆவணங்களில் உள்ள சூழலுக்கு ஏற்ப சரியான முகவரியை தானாகவே தேர்ந்தெடுக்கப் பயன்படுகிறது. "
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_admission_member_user_id
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_admission_register_member_user_id
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_member_form
+msgid "User"
+msgstr "பயனர்"
+
+#. module: common_custom_membership
+#: model:ir.model,name:common_custom_membership.model_res_users
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_user_ids
+msgid "Users"
+msgstr "பயனர்கள்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,help:common_custom_membership.field_op_member_currency_id
+msgid "Utility field to express amount currency"
+msgstr "தொகை நாணயத்தை வெளிப்படுத்த பயன்பாட்டு புலம்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_property_stock_supplier
+msgid "Vendor Location"
+msgstr "விற்பனையாளர் இருப்பிடம்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_property_supplier_payment_term_id
+msgid "Vendor Payment Terms"
+msgstr "விற்பனையாளர் கொடுப்பனவு விதிமுறைகள்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_website
+msgid "Website"
+msgstr "இணையதளம்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_website_message_ids
+msgid "Website Messages"
+msgstr "வலைத்தள செய்திகள்"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,help:common_custom_membership.field_op_member_website_message_ids
+msgid "Website communication history"
+msgstr "வலைத்தள தொடர்பு வரலாறு"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,help:common_custom_membership.field_op_member_website
+msgid "Website of Partner or Company"
+msgstr "கூட்டாளர் அல்லது நிறுவனத்தின் வலைத்தளம்"
+
+#. module: common_custom_membership
+#: model:ir.ui.menu,name:common_custom_membership.whatsapp_menu_root
+msgid "Whatsapp"
+msgstr "வாட்ஸ்அப்"
+
+#. module: common_custom_membership
+#: model:ir.actions.act_window,name:common_custom_membership.action_op_whatsapp_mesage_view
+#: model:ir.ui.menu,name:common_custom_membership.whatsapp_msg_menu
+#: model:ir.ui.view,arch_db:common_custom_membership.op_whatsapp_send_msg_wizard
+msgid "Whatsapp Message"
+msgstr "வாட்ஸ்அப் செய்தி"
+
+#. module: common_custom_membership
+#: model:ir.ui.view,arch_db:common_custom_membership.op_whatsapp_send_msg_wizard
+#: model:ir.ui.view,arch_db:common_custom_membership.view_sms_form
+msgid "Write your message here and send to Partner"
+msgstr "உங்கள் செய்தியை இங்கே எழுதி கூட்டாளருக்கு அனுப்புங்கள்"
+
+#. module: common_custom_membership
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_admission_member_form
+#: model:ir.ui.view,arch_db:common_custom_membership.view_op_member_form
+msgid "ZIP"
+msgstr "ZIP"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_admission_member_zip
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_member_zip
+msgid "Zip"
+msgstr "Zip"
+
+#. module: common_custom_membership
+#: selection:op.language.wizard,state:0
+msgid "done"
+msgstr "முடிந்தது"
+
+#. module: common_custom_membership
+#: model:ir.model.fields,field_description:common_custom_membership.field_op_admission_member_image
+msgid "image"
+msgstr "படம்"
+
+#. module: common_custom_membership
+#: selection:op.language.wizard,state:0
+msgid "init"
+msgstr "init"
+
+#. module: common_custom_membership
+#: model:ir.ui.view,arch_db:common_custom_membership.view_language_form
+msgid "language"
+msgstr "மொழி"
+
+#. module: common_custom_membership
+#: model:ir.model,name:common_custom_membership.model_op_district
+msgid "op.district"
+msgstr "op.district"
+
+#. module: common_custom_membership
+#: model:ir.model,name:common_custom_membership.model_op_language_wizard
+msgid "op.language.wizard"
+msgstr "op.language.wizard"
+
+#. module: common_custom_membership
+#: model:ir.model,name:common_custom_membership.model_op_member
+msgid "op.member"
+msgstr "op.member"
+
+#. module: common_custom_membership
+#: model:ir.model,name:common_custom_membership.model_op_panchayat
+msgid "op.panchayat"
+msgstr "op.panchayat"
+
+#. module: common_custom_membership
+#: model:ir.model,name:common_custom_membership.model_op_sms
+msgid "op.sms"
+msgstr "op.sms"
+
+#. module: common_custom_membership
+#: model:ir.model,name:common_custom_membership.model_op_sms_line
+msgid "op.sms.line"
+msgstr "op.sms.line"
+
+#. module: common_custom_membership
+#: model:ir.model,name:common_custom_membership.model_op_union
+msgid "op.union"
+msgstr "op.union"
+
+#. module: common_custom_membership
+#: model:ir.model,name:common_custom_membership.model_op_whatsapp_message_wizard
+msgid "op.whatsapp.message.wizard"
+msgstr "op.whatsapp.message.wizard"
+
+#. module: common_custom_membership
+#: model:ir.ui.view,arch_db:common_custom_membership.op_member_user_create_view
+msgid "or"
+msgstr "or"
+
+#. module: common_custom_membership
+#: model:ir.ui.view,arch_db:common_custom_membership.view_sms_form
+msgid "send"
+msgstr "அனுப்பு"
+
+#. module: common_custom_membership
+#: model:ir.ui.view,arch_db:common_custom_membership.view_sms_form
+msgid "sms Message"
+msgstr "sms செய்தி"
+
+#. module: common_custom_membership
+#: model:ir.ui.view,arch_db:common_custom_membership.view_sms_form
+msgid "this button will send an sms"
+msgstr "this button will send an sms"
+

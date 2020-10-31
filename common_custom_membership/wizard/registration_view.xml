@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <record id="op_registration_wizard_form" model="ir.ui.view">
+            <field name="name">op.registration.wizard.form</field>
+            <field name="model">op.registration.wizard</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <form string="Registration Form">
+                    <group>
+                        <field name="party_name" placeholder="Party Name"/>
+                        <field name="admin_name" placeholder="Admin Name"/>
+                    </group>
+                    <group>
+                        <field name="admin_login_email_id" placeholder="Email"/>
+                        <field name="login_password" placeholder="Password" password="True"/>
+                        <field name="admin_contact_number" placeholder="Person Name"/>
+                        <field name="phone_number" placeholder="Phone Number"/>
+                    </group>
+                    <!-- <label string="Administration Management Modules:" style="width: 18%;font-color:blue;font-size:18px"/>
+                    <group>
+                        <field name="sales" />
+                        <field name="fees"/>
+                    </group>
+                    <label string="Learning Management Modules:" style="width: 18%;font-color:blue;font-size:18px"/>
+                    <group>
+                        <field name="timetable" />
+                    </group>
+                    <label string="School Type:" style="width: 18%;font-color:blue;font-size:18px"/>
+                    <group>
+                        <field name="nursery_school" />
+                        <field name="primary_school"/>
+                        <field name="high_school"/>
+                        <field name="hr_sec_school"/>
+                    </group> -->
+                    <footer>
+                        <button name="submit" string="submit" type="object"/>
+                        <button name="cancel" string="Cancel" special="cancel"/>
+                    </footer>
+                    <group>
+                        <field name="progress_rate" widget="gauge" options="{'max_field': 'maximum_rate'}">
+                        </field>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_op_registration_view" model="ir.actions.act_window">
+            <field name="name">Registration Form</field>
+            <field name="res_model">op.registration.wizard</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="op_registration_wizard_form"/>
+            <field name="target">inline</field>
+        </record>
+
+        <record id="custom_pop_message_wizard_view_form" model="ir.ui.view">
+            <field name="name">custom.pop.message.form</field>
+            <field name="model">custom.pop.message</field>
+            <field name="arch" type="xml">
+                <form string="Custom POP Message">
+
+                    <field name="name" readonly="1"/>
+
+                    <footer>
+                       <button name="reload" string="Close" type="object" class="btn-primary"/>
+                    </footer>
+               </form>
+            </field>
+        </record>
+
+        <menuitem id="registration_menu_root" name="Party Registration" sequence="7"/>
+        <menuitem id="registration_menu" name="Self Registration Form" parent="registration_menu_root"
+                  sequence="1" action="action_op_registration_view"/>
+    </data>
+</odoo>

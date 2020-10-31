@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="view_op_admission_register_member_tree" model="ir.ui.view">
+            <field name="name">op.admission.register.member.tree</field>
+            <field name="model">op.admission.register.member</field>
+            <field name="priority" eval="8" />
+            <field name="arch" type="xml">
+                <tree string="Admission Register Member">
+                    <field name="name" />
+                    <field name="district_id" />
+                    <field name="union_id"/>
+                    <field name="panchayat_id"/>
+                    <field name="start_date" />
+                    <field name="end_date" />
+                    <field name="min_count" invisible="1"/>
+                    <field name="max_count" />
+                    <field name="state" />
+                </tree>
+            </field>
+        </record>
+        <record id="view_op_admission_register_member_form" model="ir.ui.view">
+            <field name="name">op.admission.register.member.form</field>
+            <field name="model">op.admission.register.member</field>
+            <field name="priority" eval="8" />
+            <field name="arch" type="xml">
+                <form string="Admission Register Member">
+                    <header groups="common_custom_membership.group_op_union_admin,common_custom_membership.group_op_district_admin,
+                            common_custom_membership.group_op_membership_admin,common_custom_membership.group_op_panchayat_admin">
+                        <button name="start_admission" states="draft" type="object"
+                            string="Admission" class="oe_highlight"/>
+                        <button name="close_register" states="admission" type="object"
+                            string="Done" class="oe_highlight" />
+                        <button name="cancel_register" states="draft" string="Cancel"
+                            type="object" />
+                        <button name="set_to_draft" states="cancel" string="Set to Draft"
+                            type="object" />
+                        <field name="state" widget="statusbar" statusbar_visible="draft,admission,done" />
+                    </header>
+                    <sheet>
+                        <group>
+                            <field name="name" />
+                        </group>
+                        <group col="4">
+                            <field name="district_id" />
+                            <field name="union_id"/>
+                            <field name="panchayat_id"/>
+                            <field name="user_id" />
+                            <field name="start_date" />
+                            <field name="end_date" />
+                            <field name="min_count" invisible="1"/>
+                            <field name="max_count" />
+                        </group>
+                        <group string="Applications">
+                            <field name="admission_ids" nolabel="1" readonly="1" />
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="view_op_admission_register_member_search" model="ir.ui.view">
+            <field name="name">op.admission.register.member.search</field>
+            <field name="model">op.admission.register.member</field>
+            <field name="priority" eval="8" />
+            <field name="arch" type="xml">
+                <search string="Admission Register Member">
+                    <field name="name" />
+                    <field name="district_id" />
+                    <field name="union_id"/>
+                    <field name="panchayat_id"/>
+                    <newline />
+                    <group expand="0" string="Group By...">
+                        <filter string="District" domain="[]" context="{'group_by':'district_id'}" />
+                        <filter string="Union" domain="[]" context="{'group_by':'union_id'}" />
+                        <filter string="Panchayat" domain="[]" context="{'group_by':'panchayat_id'}" />
+                        <filter string="Status" domain="[]" context="{'group_by':'state'}" />
+                    </group>
+                </search>
+            </field>
+        </record>
+        <record id="view_op_admission_register_member_pivot" model="ir.ui.view">
+            <field name="name">op.admission.register.member.pivot</field>
+            <field name="model">op.admission.register.member</field>
+            <field name="priority" eval="8" />
+            <field name="arch" type="xml">
+                <pivot string="Admission Register Member">
+                    <field name="name" />
+                    <field name="district_id" />
+                    <field name="start_date" />
+                    <field name="end_date" />
+                    <field name="min_count" />
+                    <field name="max_count" />
+                    <field name="state" />
+                </pivot>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="act_open_op_admission_register_member_view">
+            <field name="name">Admission Registers Member</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">op.admission.register.member</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="search_view_id" ref="view_op_admission_register_member_search" />
+            <field name="domain">[]</field>
+            <field name="context">{}</field>
+        </record>
+        <record model="ir.actions.act_window.view" id="act_open_op_admission_register_member_view_form">
+            <field name="act_window_id" ref="act_open_op_admission_register_member_view" />
+            <field name="sequence" eval="20" />
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_op_admission_register_member_form" />
+        </record>
+        <record model="ir.actions.act_window.view" id="act_open_op_admission_register_member_view_tree">
+            <field name="act_window_id" ref="act_open_op_admission_register_member_view" />
+            <field name="sequence" eval="10" />
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_op_admission_register_member_tree" />
+        </record>
+
+        <menuitem id="menu_op_admission_member_root" name="Admissions" sequence="3"/>
+
+        <menuitem id="menu_op_admission_member_submenu" name="ADMISSIONS"
+            sequence="1" parent="menu_op_admission_member_root"/>
+
+
+        <menuitem id="menu_admission_register_member" name="Admission Registers"
+            sequence="2"
+            parent="menu_op_admission_member_submenu" action="act_open_op_admission_register_member_view" />
+    </data>
+</odoo>

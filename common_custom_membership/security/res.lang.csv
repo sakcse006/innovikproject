@@ -1,0 +1,2 @@
+"id","name","code","iso_code","direction","grouping","decimal_point","thousands_sep","date_format","time_format","translatable",active
+"base.lang_ta","Tamil(India)","ta_IN","ta","Left-to-Right","[3,0]",".",",","%m/%d/%Y","%H:%M:%S","True","True"
